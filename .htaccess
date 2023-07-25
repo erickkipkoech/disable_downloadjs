@@ -1,0 +1,8 @@
+# Disable directory browsing
+Options -Indexes
+
+# Prevent direct access to video files (mp4)
+<FilesMatch "\.(mp4)$">
+    Order deny,allow
+    Deny from all
+</FilesMatch>
